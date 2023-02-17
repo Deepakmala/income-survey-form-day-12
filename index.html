@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Income Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="income.css">
+</head>
+<body>
+	<h1>Income Survey Form</h1>
+	<form>
+		<div class="form-group">
+			<label for="age">1. What is your age?</label>
+			<input type="number" id="age" name="age" required>
+		</div>
+		<div class="form-group">
+			<label for="gender">2. What is your gender?</label>
+			<label><input type="radio" name="gender" value="male" required>Male</label>
+			<label><input type="radio" name="gender" value="female">Female</label>
+			<label><input type="radio" name="gender" value="other">Other</label>
+		</div>
+		<div class="form-group">
+			<label for="income">3. What is your annual income?</label>
+			<select id="income" name="income" required>
+				<option value="">Select one</option>
+				<option value="less than 20k">Less than $20,000</option>
+				<option value="20k-50k">$20,000 - $50,000</option>
+				<option value="50k-100k">$50,000 - $100,000</option>
+				<option value="more than 100k">More than $100,000</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="education">4. What is your highest level of education?</label>
+			<select id="education" name="education" required>
+				<option value="">Select one</option>
+				<option value="high school">High School</option>
+				<option value="bachelor">Bachelor's Degree</option>
+				<option value="master">Master's Degree</option>
+				<option value="phd">PhD or higher</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="occupation">5. What is your occupation?</label>
+			<input type="text" id="occupation" name="occupation" required>
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
